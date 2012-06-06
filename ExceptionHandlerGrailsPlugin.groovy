@@ -1,3 +1,7 @@
+import grails.util.GrailsUtil;
+
+import org.grails.plugins.exceptionHandler.ConfigurableExceptionResolver
+
 class ExceptionHandlerGrailsPlugin {
     // the plugin version
     def version = "0.1"
@@ -9,6 +13,8 @@ class ExceptionHandlerGrailsPlugin {
     def pluginExcludes = [
         "grails-app/views/error.gsp"
     ]
+	
+	def loadAfter = ['controllers']
 
     // TODO Fill in these fields
     def title = "Exception Handler Plugin" // Headline display name of the plugin
@@ -43,8 +49,10 @@ Brief summary/description of the plugin.
     }
 
     def doWithSpring = {
-        // TODO Implement runtime spring config (optional)
-    }
+		exceptionHandler(ConfigurableExceptionResolver) {
+            exceptionMappings = ['java.lang.Exception': '/error']
+        }    
+	}
 
     def doWithDynamicMethods = { ctx ->
         // TODO Implement registering dynamic methods to classes (optional)
