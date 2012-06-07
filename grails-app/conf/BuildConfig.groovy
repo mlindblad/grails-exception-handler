@@ -33,6 +33,6 @@ grails.project.dependency.resolution = {
               ":release:2.0.2") {
             export = false
         }
-		compile ':mail:latest.release'
+		//compile ':mail:latest.release'
     }
 }
