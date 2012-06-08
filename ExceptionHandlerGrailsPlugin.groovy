@@ -18,8 +18,8 @@ class ExceptionHandlerGrailsPlugin {
 
     // TODO Fill in these fields
     def title = "Exception Handler Plugin" // Headline display name of the plugin
-    def author = "Your name"
-    def authorEmail = ""
+    def author = "Martin Lindblad, Konstantinos Kostarellis, Benoit Hediard"
+    def authorEmail = "kosta.grails@gmail.com, ben@benorama.com"
     def description = '''\
 Brief summary/description of the plugin.
 '''
