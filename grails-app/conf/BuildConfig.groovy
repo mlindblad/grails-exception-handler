@@ -30,7 +30,8 @@ grails.project.dependency.resolution = {
 
     plugins {
         build(":tomcat:$grailsVersion",
-              ":release:2.0.2") {
+              ":release:2.0.2", 
+			  ":rest-client-builder:1.0.2") { // rest-client-builder is a dependency of release
             export = false
         }
 		//compile ':mail:latest.release'

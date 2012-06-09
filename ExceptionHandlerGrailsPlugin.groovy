@@ -1,6 +1,4 @@
-import grails.util.GrailsUtil;
-
-import org.grails.plugins.exceptionHandler.ConfigurableExceptionResolver
+import org.grails.plugins.exception.handler.ConfigurableExceptionResolver
 
 class ExceptionHandlerGrailsPlugin {
     // the plugin version
@@ -16,10 +14,11 @@ class ExceptionHandlerGrailsPlugin {
 	
 	def loadAfter = ['controllers']
 
-    // TODO Fill in these fields
     def title = "Exception Handler Plugin" // Headline display name of the plugin
-    def author = "Martin Lindblad, Konstantinos Kostarellis, Benoit Hediard, Álvaro Sánchez-Mariscal, Alberto Vilches"
-    def authorEmail = "kosta.grails@gmail.com, ben@benorama.com, alvaro.sanchez@salenda.es, vilches@gmail.com"
+    def author = "Konstantinos Kostarellis"
+    def authorEmail = "kosta.grails@gmail.com"
+
+//TODO: Get a nice description
     def description = '''\
 Brief summary/description of the plugin.
 '''
@@ -30,19 +29,23 @@ Brief summary/description of the plugin.
     // Extra (optional) plugin metadata
 
     // License: one of 'APACHE', 'GPL2', 'GPL3'
-//    def license = "APACHE"
+    def license = "APACHE"
 
     // Details of company behind the plugin (if there is one)
-//    def organization = [ name: "My Company", url: "http://www.my-company.com/" ]
+    def organization = [ name: "Hackergarten", http: "http://gr8conf.eu/Presentations/Hackergarten-on-tour" ]
 
     // Any additional developers beyond the author specified above.
-//    def developers = [ [ name: "Joe Bloggs", email: "joe@bloggs.net" ]]
+    def developers = [
+            [ name: "Benoit Hediard", email: "ben@benorama.com" ],
+            [ name: "Ãlvaro SÃ¡nchez-Mariscal", email: "alvaro.sanchez@salenda.es" ],
+            [ name: "Alberto Vilches", email: "vilches@gmail.com" ],
+            [ name: "Martin Lindblad"]]
 
     // Location of the plugin's issue tracker.
 //    def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPMYPLUGIN" ]
 
     // Online location of the plugin's browseable source code.
-//    def scm = [ url: "http://svn.grails-plugins.codehaus.org/browse/grails-plugins/" ]
+    def scm = [ url: "https://github.com/mlindblad/grails-exception-handler" ]
 
     def doWithWebDescriptor = { xml ->
         // TODO Implement additions to web.xml (optional), this event occurs before

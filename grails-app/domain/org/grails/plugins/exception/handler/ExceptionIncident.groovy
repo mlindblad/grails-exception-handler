@@ -1,7 +1,7 @@
-package exception.handler
+package org.grails.plugins.exception.handler
 
 class ExceptionIncident {
-	
+
 	Date dateCreated
 	String userDescription
 	String remoteIp

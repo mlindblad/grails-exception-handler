@@ -1,13 +1,9 @@
-package org.grails.plugins.exceptionHandler
+package org.grails.plugins.exception.handler
 
 import javax.servlet.http.HttpServletRequest
-import javax.servlet.http.HttpServletResponse
 
 import org.codehaus.groovy.grails.web.errors.GrailsExceptionResolver
-import org.springframework.web.servlet.ModelAndView
 
-import exception.handler.ExceptionIncident
-import exception.handler.ExceptionLog
 
 class ConfigurableExceptionResolver extends GrailsExceptionResolver {
 

@@ -1,7 +1,6 @@
 *.iws
 *Db.properties
 *Db.script
-.settings
 stacktrace.log
 /*.zip
 /plugin.xml
@@ -15,6 +14,5 @@ stacktrace.log
 /web-app/plugins
 /web-app/WEB-INF/classes
 .link_to_grails_plugins/
-
-c.tld
-fmt.tld
+/web-app/WEB-INF/c.tld
+/web-app/WEB-INF/fmt.tld

@@ -1,7 +1,7 @@
-package exception.handler
+package org.grails.plugins.exception.handler
 
 class ExceptionLog {
-	
+
 	String id
 	String stackTrace
 	String uri

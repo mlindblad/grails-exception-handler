@@ -1,4 +1,4 @@
-package exception.handler
+package org.grails.plugins.exception.handler
 
 
 
